@@ -1,0 +1,386 @@
+[
+  {
+    "id": "af83cf84-5ce8-4062-9c6f-da72a1c0c3ac",
+    "name": "SWR-01",
+    "title": "Implement WebRTC for video",
+    "description": "The software subsystem shall implement webrtc for video in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "0cd478c0-c33c-410d-9845-215c5a53f37c",
+    "name": "SWR-02",
+    "title": "Develop PID motor controllers",
+    "description": "The software subsystem shall develop pid motor controllers in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "5d0796e8-942e-4896-a407-0f7fee979989",
+    "name": "SWR-03",
+    "title": "Write HL7 parser",
+    "description": "The software subsystem shall write hl7 parser in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "ef2f0ab5-7c28-45a1-85de-577a5dd7c512",
+    "name": "SWR-04",
+    "title": "Develop UI overlay renderer",
+    "description": "The software subsystem shall develop ui overlay renderer in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "76ec439a-144c-4e0e-96a6-d19b8dbc522f",
+    "name": "SWR-05",
+    "title": "Implement AES encryption module",
+    "description": "The software subsystem shall implement aes encryption module in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "dabe1255-62a5-41df-89c2-15a30aae3246",
+    "name": "SWR-06",
+    "title": "Write POST diagnostics script",
+    "description": "The software subsystem shall write post diagnostics script in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "962d58a7-739b-4965-8e15-e2dfa9df85a8",
+    "name": "SWR-07",
+    "title": "Develop OpenXR driver",
+    "description": "The software subsystem shall develop openxr driver in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "664ba123-cff0-43b5-9f6f-a3dd96a1c717",
+    "name": "SWR-08",
+    "title": "Implement kinematic solver",
+    "description": "The software subsystem shall implement kinematic solver in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "72c15002-3b6f-4d39-a64c-7041066eebda",
+    "name": "SWR-09",
+    "title": "Write tremor filter algorithm",
+    "description": "The software subsystem shall write tremor filter algorithm in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "7815cfd5-8951-4326-adab-b18d02ca5ff7",
+    "name": "SWR-10",
+    "title": "Develop alarm state machine",
+    "description": "The software subsystem shall develop alarm state machine in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "b3ba8b15-bb30-4743-888d-813a72dc265c",
+    "name": "SWR-11",
+    "title": "Implement clutch logic",
+    "description": "The software subsystem shall implement clutch logic in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "0a44d15b-1892-4a5a-bae7-0b1f4e85491d",
+    "name": "SWR-12",
+    "title": "Write battery monitoring daemon",
+    "description": "The software subsystem shall write battery monitoring daemon in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "6b697d57-03aa-471e-a913-8d1dae5fee0d",
+    "name": "SWR-13",
+    "title": "Develop transport assist controller",
+    "description": "The software subsystem shall develop transport assist controller in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "7958011d-0bd4-4cc6-b1e8-b30b4d3d78f0",
+    "name": "SWR-14",
+    "title": "Implement token handover logic",
+    "description": "The software subsystem shall implement token handover logic in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "7e186a3d-e99e-40cb-9e92-5173da194e7f",
+    "name": "SWR-15",
+    "title": "Write collision detection tree",
+    "description": "The software subsystem shall write collision detection tree in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "c9c845a3-186e-45fb-8521-aaee8a9d1560",
+    "name": "SWR-16",
+    "title": "Develop H.265 encoding pipeline",
+    "description": "The software subsystem shall develop h.265 encoding pipeline in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "e35195d2-6b57-4783-8a63-d8a5b8cb99fb",
+    "name": "SWR-17",
+    "title": "Implement audio echo cancellation",
+    "description": "The software subsystem shall implement audio echo cancellation in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "2831576e-853c-425c-ab44-bfcd3333e799",
+    "name": "SWR-18",
+    "title": "Write instrument lifespan tracker",
+    "description": "The software subsystem shall write instrument lifespan tracker in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "d030a8f9-1d43-47a1-ac6d-5c6a5dbf780a",
+    "name": "SWR-19",
+    "title": "Develop eye-tracking calibration",
+    "description": "The software subsystem shall develop eye-tracking calibration in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "35897482-87f2-4769-869d-c38b804f8b7f",
+    "name": "SWR-20",
+    "title": "Implement automated homing sequence",
+    "description": "The software subsystem shall implement automated homing sequence in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "b776fb17-278e-4a31-b4e3-08e4eeeb2dc3",
+    "name": "SWR-21",
+    "title": "Write motion scaling matrix math",
+    "description": "The software subsystem shall write motion scaling matrix math in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "ca27bd53-4ad5-4fed-b943-d00cb79c61bc",
+    "name": "SWR-22",
+    "title": "Develop thermal throttling logic",
+    "description": "The software subsystem shall develop thermal throttling logic in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "7fac83bc-3196-40fa-8833-bc2fee5df89e",
+    "name": "SWR-23",
+    "title": "Implement network failover protocol",
+    "description": "The software subsystem shall implement network failover protocol in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "c7131090-33b1-4efa-b719-e5810af9ae70",
+    "name": "SWR-24",
+    "title": "Write UI gaze-selection logic",
+    "description": "The software subsystem shall write ui gaze-selection logic in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "f82f096c-a077-480f-a61d-a1550599535a",
+    "name": "SWR-25",
+    "title": "Develop suture macro script",
+    "description": "The software subsystem shall develop suture macro script in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "54d24a88-af1a-4ee7-a0d9-fdafada970b3",
+    "name": "SWR-26",
+    "title": "Implement logging database",
+    "description": "The software subsystem shall implement logging database in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "5814819c-c14c-44fa-b8da-ece1ac09eeb8",
+    "name": "SWR-27",
+    "title": "Write firmware update manager",
+    "description": "The software subsystem shall write firmware update manager in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "547b44be-f811-48fb-98cc-64e628096a7f",
+    "name": "SWR-28",
+    "title": "Develop surgeon profile system",
+    "description": "The software subsystem shall develop surgeon profile system in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "5e0d1ee3-492e-4d65-8dc1-0cfa114b13a3",
+    "name": "SWR-29",
+    "title": "Implement 3D stereoscopic rendering",
+    "description": "The software subsystem shall implement 3d stereoscopic rendering in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "300c4937-e2f6-4f23-b741-b7635fdfa3ad",
+    "name": "SWR-30",
+    "title": "Write robotic arm simulator",
+    "description": "The software subsystem shall write robotic arm simulator in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "4961cd6a-00a8-47c4-9f4a-a38138a08859",
+    "name": "SWR-31",
+    "title": "Develop calibration wizard",
+    "description": "The software subsystem shall develop calibration wizard in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "470d2b5e-d2f6-4d96-adf0-6dabac74dfcc",
+    "name": "SWR-32",
+    "title": "Implement haptic feedback loop",
+    "description": "The software subsystem shall implement haptic feedback loop in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "129aa857-2b02-4849-b0ab-3699d724635e",
+    "name": "SWR-33",
+    "title": "Write motor driver interface",
+    "description": "The software subsystem shall write motor driver interface in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "bd3eb9e2-6a16-4005-8ba2-f12486f7dad0",
+    "name": "SWR-34",
+    "title": "Develop emergency stop handler",
+    "description": "The software subsystem shall develop emergency stop handler in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "04414c35-1285-477b-84ec-c886f27a5ee6",
+    "name": "SWR-35",
+    "title": "Implement network jitter buffer",
+    "description": "The software subsystem shall implement network jitter buffer in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "8e9d762f-eed6-4e1b-a8f9-ea7cb2e586b7",
+    "name": "SWR-36",
+    "title": "Write video streaming client",
+    "description": "The software subsystem shall write video streaming client in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "20ba64f4-fc18-4199-a78d-47eb074e4e52",
+    "name": "SWR-37",
+    "title": "Develop multi-tenant cloud sync",
+    "description": "The software subsystem shall develop multi-tenant cloud sync in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "65c47466-a570-4064-8ef7-d8a7e1551ea5",
+    "name": "SWR-38",
+    "title": "Implement authentication protocol",
+    "description": "The software subsystem shall implement authentication protocol in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "8972d76f-3d50-4ab4-9b33-8d73f16f463e",
+    "name": "SWR-39",
+    "title": "Write error reporting service",
+    "description": "The software subsystem shall write error reporting service in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "e919f27e-e88f-417a-b509-b9c0f3b0f247",
+    "name": "SWR-40",
+    "title": "Develop VR training environment",
+    "description": "The software subsystem shall develop vr training environment in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "fb05e441-c3f0-4166-8ee8-ddac4e2b8b1b",
+    "name": "SWR-41",
+    "title": "Implement voice command parser",
+    "description": "The software subsystem shall implement voice command parser in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "8a1cd309-20d5-4d94-a7d3-24f83662bc1f",
+    "name": "SWR-42",
+    "title": "Write touch-screen driver",
+    "description": "The software subsystem shall write touch-screen driver in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "c050d440-3fd8-4857-b537-1650e709711b",
+    "name": "SWR-43",
+    "title": "Develop instrument RFID reader",
+    "description": "The software subsystem shall develop instrument rfid reader in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "28bd9718-15d5-4cdc-8ff2-5c9bcdb29e03",
+    "name": "SWR-44",
+    "title": "Implement system heartbeat monitor",
+    "description": "The software subsystem shall implement system heartbeat monitor in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "869a1c9c-afb4-480b-b33f-0b75a7eb2402",
+    "name": "SWR-45",
+    "title": "Write hardware interrupt listener",
+    "description": "The software subsystem shall write hardware interrupt listener in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "5ab577f3-0689-4e62-9ebb-9d905c225e05",
+    "name": "SWR-46",
+    "title": "Develop telemetry dashboard",
+    "description": "The software subsystem shall develop telemetry dashboard in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "22c2fea5-028e-4076-b412-87eeba0e7fb6",
+    "name": "SWR-47",
+    "title": "Implement robotic path planner",
+    "description": "The software subsystem shall implement robotic path planner in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  },
+  {
+    "id": "7182da6a-aa22-4075-a409-cd2e3bf3a9b3",
+    "name": "SWR-48",
+    "title": "Write inverse kinematics library",
+    "description": "The software subsystem shall write inverse kinematics library in accordance with medical software safety standards.",
+    "type": "SWR",
+    "traceLinks": []
+  }
+]

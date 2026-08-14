@@ -1,0 +1,231 @@
+[
+  {
+    "id": "d46c37db-5c41-41cf-b92d-3de948af2d60",
+    "name": "UR-01",
+    "title": "Stereoscopic 3D Vision",
+    "description": "The surgeon needs a high-definition 3D view of the surgical site to perceive depth accurately.",
+    "type": "UR",
+    "traceLinks": [
+      "6e81da9c-80ab-4ac4-836c-1985de9efe8c",
+      "0b235e36-eae3-47f2-aec1-edb36f26985d"
+    ]
+  },
+  {
+    "id": "270551bf-89a3-4b3e-bf0c-b95fdbf18912",
+    "name": "UR-02",
+    "title": "Haptic Tissue Feedback",
+    "description": "The surgeon must feel physical resistance matching the tissue density being manipulated.",
+    "type": "UR",
+    "traceLinks": [
+      "588387f6-8bbf-40c0-adc6-03d896cc90e9",
+      "16336a29-7427-442f-ba20-63ade805e13f"
+    ]
+  },
+  {
+    "id": "29bbd918-0a0c-45ce-a6c1-a7f37ad6ab86",
+    "name": "UR-03",
+    "title": "Sub-20ms Latency",
+    "description": "The system must respond to surgeon inputs instantly to prevent over-correction during delicate cuts.",
+    "type": "UR",
+    "traceLinks": [
+      "dcbb483c-98b6-485b-a403-54ab2c1776c4",
+      "9b22de71-c461-480f-8560-491cbfe8a326",
+      "674df812-4e52-44cf-80c9-918374e297b8"
+    ]
+  },
+  {
+    "id": "22531563-f569-4fbc-86b3-e84f6d004442",
+    "name": "UR-04",
+    "title": "Ergonomic Console",
+    "description": "The console must support a seated posture for operations lasting up to 8 hours without fatigue.",
+    "type": "UR",
+    "traceLinks": [
+      "d6fabe4d-3441-40d3-95e5-ad71e959bd4e",
+      "a5034a3a-c908-479c-b7b1-0f2fb98f70f9"
+    ]
+  },
+  {
+    "id": "321e8f35-7887-4b42-8121-80ceb04ab846",
+    "name": "UR-05",
+    "title": "Maintain Sterile Field",
+    "description": "All patient-side components must be sterilizable or compatible with sterile draping.",
+    "type": "UR",
+    "traceLinks": [
+      "307eb53d-3be1-46ac-9680-421ae5303ffc",
+      "5d66998b-0a4e-48dd-8db7-abcd650db5b0"
+    ]
+  },
+  {
+    "id": "1e9aed8b-abb8-43b8-bf93-3b340d884f54",
+    "name": "UR-06",
+    "title": "Hard Emergency Stop",
+    "description": "The surgeon needs a physical button to instantly freeze all robotic movement.",
+    "type": "UR",
+    "traceLinks": [
+      "6e81da9c-80ab-4ac4-836c-1985de9efe8c",
+      "15fcb7d8-b7dd-4fa1-ac68-797d884dc07a",
+      "0b235e36-eae3-47f2-aec1-edb36f26985d",
+      "da7221de-0e7e-4b0e-8fe6-e1627a4f2f2d"
+    ]
+  },
+  {
+    "id": "7a1def91-fff5-42b8-bafc-427b58f77b10",
+    "name": "UR-07",
+    "title": "Two-Way Audio",
+    "description": "The surgeon must be able to communicate clearly with the patient-side OR staff.",
+    "type": "UR",
+    "traceLinks": [
+      "679eb269-6556-4053-9f21-2e4e18537d04",
+      "4b06c804-49e0-4fc3-ba5e-e944b40b57e6"
+    ]
+  },
+  {
+    "id": "cd8d4a95-7a67-4390-bdc9-9230162c66ae",
+    "name": "UR-08",
+    "title": "Vital Signs Overlay",
+    "description": "Patient vitals (HR, BP, SpO2) must be visible within the surgeon's field of view.",
+    "type": "UR",
+    "traceLinks": [
+      "0d8430fb-0091-4642-a10c-7273704e3b76",
+      "7e4e769a-85a8-4426-a474-c303172f7812"
+    ]
+  },
+  {
+    "id": "ec897120-5cd0-4d68-8cbd-1ebd8a90ff67",
+    "name": "UR-09",
+    "title": "Dual-Console Mentoring",
+    "description": "Two surgeons must be able to share control of the robot for training purposes.",
+    "type": "UR",
+    "traceLinks": [
+      "d6fabe4d-3441-40d3-95e5-ad71e959bd4e",
+      "2b1346fc-b15a-4ee3-8ec2-df9aed420954",
+      "a5034a3a-c908-479c-b7b1-0f2fb98f70f9",
+      "55a12617-1a0b-4f14-8fa4-26f98c0763be"
+    ]
+  },
+  {
+    "id": "610089d4-489f-43ec-a2ff-4a53ff69333f",
+    "name": "UR-10",
+    "title": "Surgical Video Recording",
+    "description": "The system must record the entire procedure from the endoscope's perspective.",
+    "type": "UR",
+    "traceLinks": [
+      "403d713b-63a5-4685-9e64-a9716ba73ec2"
+    ]
+  },
+  {
+    "id": "e30bbc67-c8cc-4b41-8af6-f34d7d4b27f1",
+    "name": "UR-11",
+    "title": "Intuitive Clutching",
+    "description": "The surgeon must be able to reposition their hands without moving the robotic instruments.",
+    "type": "UR",
+    "traceLinks": [
+      "3d17a7d4-bf43-43b3-aef5-eea6978b6d8a"
+    ]
+  },
+  {
+    "id": "8fa6ed55-d336-43b4-8c87-59503bfd6f40",
+    "name": "UR-12",
+    "title": "Uninterruptible Power",
+    "description": "The robot must continue operating safely if hospital grid power fails.",
+    "type": "UR",
+    "traceLinks": [
+      "679eb269-6556-4053-9f21-2e4e18537d04",
+      "2eda0f1f-d7ca-430f-a66e-3d595e8afaba",
+      "4b06c804-49e0-4fc3-ba5e-e944b40b57e6"
+    ]
+  },
+  {
+    "id": "aac267a7-dfc4-4a01-a6b1-9cd639623d9f",
+    "name": "UR-13",
+    "title": "Rapid Instrument Swap",
+    "description": "OR staff must be able to detach and attach new surgical instruments in under 10 seconds.",
+    "type": "UR",
+    "traceLinks": [
+      "c9c438aa-087f-4f0b-8a8b-d697149c2b5c"
+    ]
+  },
+  {
+    "id": "cd2836ce-2422-4359-be75-2d4fd43c93f5",
+    "name": "UR-14",
+    "title": "Collision Avoidance",
+    "description": "The robotic arms must never collide with each other or the patient's exterior.",
+    "type": "UR",
+    "traceLinks": [
+      "481c2400-bb24-4eab-9e97-083697c76c83"
+    ]
+  },
+  {
+    "id": "be8b09c0-71a7-47d8-a904-ca376e5075cd",
+    "name": "UR-15",
+    "title": "System Alarms",
+    "description": "The system must provide audible and visual alerts for any hardware or software faults.",
+    "type": "UR",
+    "traceLinks": [
+      "403d713b-63a5-4685-9e64-a9716ba73ec2",
+      "907bd7aa-0045-4968-b53d-1b78f986610d"
+    ]
+  },
+  {
+    "id": "572111d5-e0a0-4b82-9eed-c91735173615",
+    "name": "UR-16",
+    "title": "Quick OR Setup",
+    "description": "The robot must be ready for surgery within 15 minutes of entering the OR.",
+    "type": "UR",
+    "traceLinks": [
+      "ec365028-068d-4159-a18c-c8d3ed192607"
+    ]
+  },
+  {
+    "id": "b5865802-7d4f-4428-ab4d-0c479eaa9b17",
+    "name": "UR-17",
+    "title": "Cart Portability",
+    "description": "The patient-side cart must be easily moved between operating rooms by a single person.",
+    "type": "UR",
+    "traceLinks": [
+      "740d0e5d-86b7-44e3-aa5a-e3abf37ca476"
+    ]
+  },
+  {
+    "id": "1abd34e6-2ffa-4574-bcb1-72796344e705",
+    "name": "UR-18",
+    "title": "Pre-Op Diagnostics",
+    "description": "The system must automatically test all joints and sensors before allowing surgery to begin.",
+    "type": "UR",
+    "traceLinks": [
+      "c9c438aa-087f-4f0b-8a8b-d697149c2b5c",
+      "ff4edbbd-02e9-4025-aac8-7cd5b16e955b"
+    ]
+  },
+  {
+    "id": "f2d88bfc-1af5-4e2d-9b69-644dc58de50c",
+    "name": "UR-19",
+    "title": "Simulation Training Mode",
+    "description": "The console must support virtual reality simulation software for surgeon practice.",
+    "type": "UR",
+    "traceLinks": [
+      "9b22de71-c461-480f-8560-491cbfe8a326"
+    ]
+  },
+  {
+    "id": "73a41a3d-1b6b-4304-ba81-2d215b478e74",
+    "name": "UR-20",
+    "title": "HIPAA Data Privacy",
+    "description": "All recorded patient data and video must be encrypted at rest and in transit.",
+    "type": "UR",
+    "traceLinks": [
+      "8ccc1c96-c440-4b9b-b69b-12beafa5b842"
+    ]
+  },
+  {
+    "id": "d45788c9-f45b-49a2-8493-54107608c26b",
+    "name": "UR-21",
+    "title": "Foot Pedal Controls",
+    "description": "The surgeon must use foot pedals to control electrocautery and camera zoom.",
+    "type": "UR",
+    "traceLinks": [
+      "ec365028-068d-4159-a18c-c8d3ed192607",
+      "de7b027d-9819-4b17-a200-e9972e6f5b02"
+    ]
+  }
+]

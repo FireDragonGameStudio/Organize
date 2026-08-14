@@ -1,0 +1,72 @@
+- !<AssetImportMetadata/da424f6d-7ea6-42bc-bd1f-0d9888be9003>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> bea1b1ae-a3ee-46b4-af29-526e2e07d217
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> bea1b1ae-a3ee-46b4-af29-526e2e07d217
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ad8728e7-b64c-4e9c-afdc-b43d98dc5aed
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ad8728e7-b64c-4e9c-afdc-b43d98dc5aed>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 85cee504-1fdb-43f1-ad3c-ecc299361cd9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugLayout: false
+    dirColor: false
+    panelHeight: false
+    panelWidth: false
+    srColor: false
+    swrColor: false
+    titleText: false
+    urColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - panelWidth: !<float> 30.000000
+      panelHeight: !<float> 9.000000
+      titleText: Requirements Trace Graph
+      urColor: !<Vec4> {x: 1.000000, y: 0.750000, z: 0.200000, w: 1.000000}
+      srColor: !<Vec4> {x: 0.250000, y: 0.550000, z: 0.950000, w: 1.000000}
+      dirColor: !<Vec4> {x: 0.600000, y: 0.350000, z: 0.900000, w: 1.000000}
+      swrColor: !<Vec4> {x: 0.250000, y: 0.800000, z: 0.450000, w: 1.000000}
+      debugLayout: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TraceGraphLegendUI – Title + 4-class legend HUD</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float panelWidth = 30 {"hint":"Panel width in centimeters", "widget":"slider", "min":20, "max":50, "step":0.5}'
+    - '// @input float panelHeight = 9 {"hint":"Panel height in centimeters", "widget":"slider", "min":6, "max":16, "step":0.5}'
+    - '// @input string titleText = "Requirements Trace Graph" {"hint":"Header title text"}'
+    - '// @input vec4 urColor = "{1.0, 0.75, 0.2, 1.0}" {"hint":"Accent color for User Requirements (UR)", "widget":"color"}'
+    - '// @input vec4 srColor = "{0.25, 0.55, 0.95, 1.0}" {"hint":"Accent color for System Requirements (SR)", "widget":"color"}'
+    - '// @input vec4 dirColor = "{0.6, 0.35, 0.9, 1.0}" {"hint":"Accent color for Design Input Requirements (DIR)", "widget":"color"}'
+    - '// @input vec4 swrColor = "{0.25, 0.8, 0.45, 1.0}" {"hint":"Accent color for Software Requirements (SWR)", "widget":"color"}'
+    - '// @input bool debugLayout {"hint":"Log layout diagnostics to the console"}'
+    - '// @ui {"widget":"group_end"}'

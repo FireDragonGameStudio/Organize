@@ -1,0 +1,159 @@
+openapi: 3.0.0
+info:
+  title: Requirements Management API
+  version: 1.0.0
+  description: API for managing projects and their requirement files.
+servers:
+  - url: http://localhost:3000
+    description: Local server
+paths:
+  /api/projects:
+    get:
+      summary: List all projects
+      responses:
+        '200':
+          description: A list of projects
+    post:
+      summary: Create a new project
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the project
+      responses:
+        '201':
+          description: Project created
+  /api/projects/{projectId}:
+    delete:
+      summary: Delete a project
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Project deleted
+  /api/projects/{projectId}/files/{fileType}:
+    get:
+      summary: Get requirements in a file
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fileType
+          required: true
+          schema:
+            type: string
+            enum: [user, system, design_input, software]
+      responses:
+        '200':
+          description: List of requirements
+    post:
+      summary: Create or replace a requirements file
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fileType
+          required: true
+          schema:
+            type: string
+            enum: [user, system, design_input, software]
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: File uploaded
+  /api/projects/{projectId}/files/{fileType}/requirements:
+    post:
+      summary: Add a single requirement to a file
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fileType
+          required: true
+          schema:
+            type: string
+            enum: [user, system, design_input, software]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Requirement added
+  /api/projects/{projectId}/files/{fileType}/requirements/{reqId}:
+    put:
+      summary: Update a single requirement
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fileType
+          required: true
+          schema:
+            type: string
+            enum: [user, system, design_input, software]
+        - in: path
+          name: reqId
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Requirement updated
+    delete:
+      summary: Delete a single requirement
+      parameters:
+        - in: path
+          name: projectId
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fileType
+          required: true
+          schema:
+            type: string
+            enum: [user, system, design_input, software]
+        - in: path
+          name: reqId
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Requirement deleted

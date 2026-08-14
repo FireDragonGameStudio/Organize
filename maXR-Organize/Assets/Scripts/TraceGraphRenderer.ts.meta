@@ -1,0 +1,142 @@
+- !<AssetImportMetadata/1b94c846-0373-4710-a857-efddf71ef9d3>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 059a94dd-8fb8-47a6-8392-7feed12ab96b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 059a94dd-8fb8-47a6-8392-7feed12ab96b
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 62ada4f6-58b0-49e0-9f96-a8bb467c9951
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/62ada4f6-58b0-49e0-9f96-a8bb467c9951>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 9c87ac6f-0abb-4f5f-8dbf-c2af8eeb3e92
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    clusterRadiusMinCm: false
+    clusterSpacingCm: false
+    debugColliders: false
+    dimAmount: false
+    dirColor: false
+    edgeColor: false
+    edgeMaterial: false
+    edgeMesh: false
+    edgeMeshNativeSizeCm: false
+    edgeThicknessCm: false
+    highlightEdgeColor: false
+    highlightEdgeThicknessMultiplier: false
+    labelColor: false
+    labelGapCm: false
+    labelHeightCm: false
+    layerGapCm: false
+    neighborNodeColor: false
+    nodeMaterial: false
+    nodeMeshNativeDiameterCm: false
+    nodeSizeCm: false
+    nodesRoot: false
+    primaryRingRadiusMinCm: false
+    primaryRingSpacingCm: false
+    reorgDurationSec: false
+    selectedNodeColor: false
+    selectedScaleMultiplier: false
+    sphereMesh: false
+    srColor: false
+    swrColor: false
+    urColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - nodesRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      sphereMesh: !<reference.RenderMesh> 00000000-0000-0000-0000-000000000000
+      edgeMesh: !<reference.RenderMesh> 00000000-0000-0000-0000-000000000000
+      nodeMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      edgeMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      nodeSizeCm: 2.400000
+      nodeMeshNativeDiameterCm: !<float> 1.000000
+      edgeThicknessCm: 0.150000
+      edgeMeshNativeSizeCm: !<float> 1.000000
+      edgeColor: !<Vec4> {x: 0.700000, y: 0.700000, z: 0.750000, w: 0.550000}
+      layerGapCm: !<float> 14.000000
+      primaryRingRadiusMinCm: !<float> 8.000000
+      primaryRingSpacingCm: !<float> 7.000000
+      clusterRadiusMinCm: 3.500000
+      clusterSpacingCm: !<float> 4.000000
+      reorgDurationSec: 0.600000
+      urColor: !<Vec4> {x: 1.000000, y: 0.750000, z: 0.200000, w: 1.000000}
+      srColor: !<Vec4> {x: 0.250000, y: 0.550000, z: 0.950000, w: 1.000000}
+      dirColor: !<Vec4> {x: 0.600000, y: 0.350000, z: 0.900000, w: 1.000000}
+      swrColor: !<Vec4> {x: 0.250000, y: 0.800000, z: 0.450000, w: 1.000000}
+      selectedNodeColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      neighborNodeColor: !<Vec4> {x: 0.500000, y: 0.900000, z: 1.000000, w: 1.000000}
+      highlightEdgeColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      selectedScaleMultiplier: 1.400000
+      highlightEdgeThicknessMultiplier: 2.200000
+      dimAmount: 0.750000
+      labelColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.920000}
+      labelHeightCm: 0.900000
+      labelGapCm: 0.600000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TraceGraphRenderer – Procedural graph nodes + edges</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject nodesRoot {"hint":"Authored anchor SceneObject that owns all node/edge visuals — its transform sets where the whole graph appears in the scene"}'
+    - '// @input Asset.RenderMesh sphereMesh {"hint":"Shared sphere mesh used for every requirement node"}'
+    - '// @input Asset.RenderMesh edgeMesh {"hint":"Shared unit box mesh used (scaled + oriented) for every trace-link edge"}'
+    - '// @input Asset.Material nodeMaterial {"hint":"Base material cloned per node, then tinted per requirement type"}'
+    - '// @input Asset.Material edgeMaterial {"hint":"Base material cloned per trace-link edge"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float nodeSizeCm = 2.4 {"hint":"Diameter of each node sphere, in centimeters", "widget":"slider", "min":0.5, "max":8, "step":0.1}'
+    - '// @input float nodeMeshNativeDiameterCm = 1 {"hint":"Calibration: native diameter (cm) of sphereMesh at scale (1,1,1). Adjust if nodes render the wrong size. Verified empirically via orthographic capture against the 30cm LegendPanel.", "widget":"slider", "min":0.1, "max":20, "step":0.1}'
+    - '// @input float edgeThicknessCm = 0.15 {"hint":"Thickness of each edge line, in centimeters", "widget":"slider", "min":0.02, "max":1, "step":0.01}'
+    - '// @input float edgeMeshNativeSizeCm = 1 {"hint":"Calibration: native size (cm) of edgeMesh at scale (1,1,1). Adjust if edges render the wrong thickness/length.", "widget":"slider", "min":0.1, "max":20, "step":0.1}'
+    - '// @input vec4 edgeColor = "{0.75, 0.75, 0.8, 1.0}" {"hint":"Color of trace-link edges", "widget":"color"}'
+    - '// @input float layerGapCm = 20 {"hint":"Vertical distance (cm) between adjacent Y layers — 3 layers total: UR (top), SR (middle), DIR+SWR (bottom, shared)", "widget":"slider", "min":8, "max":40, "step":1}'
+    - '// @input float primaryRingRadiusMinCm = 8 {"hint":"Minimum radius (cm) of the primary UR ring, even with very few URs", "widget":"slider", "min":3, "max":25, "step":0.5}'
+    - '// @input float primaryRingSpacingCm = 7 {"hint":"Minimum circumferential spacing (cm) between adjacent URs on the primary ring", "widget":"slider", "min":3, "max":15, "step":0.5}'
+    - '// @input float clusterRadiusMinCm = 3.5 {"hint":"Minimum radius (cm) of a satellite cluster circle — an SR cluster under its UR, or a DIR/SWR cluster under its SR — even with very few children", "widget":"slider", "min":1, "max":12, "step":0.25}'
+    - '// @input float clusterSpacingCm = 4 {"hint":"Minimum circumferential spacing (cm) between adjacent children on a satellite cluster circle", "widget":"slider", "min":1, "max":10, "step":0.25}'
+    - "// @input float reorgDurationSec = 0.6 {\"hint\":\"Duration (seconds) of the reorganize animation when a requirement's type changes\", \"widget\":\"slider\", \"min\":0.1, \"max\":2, \"step\":0.05}"
+    - '// @input vec4 urColor = "{1.0, 0.75, 0.2, 1.0}" {"hint":"Accent color for User Requirements (UR)", "widget":"color"}'
+    - '// @input vec4 srColor = "{0.25, 0.55, 0.95, 1.0}" {"hint":"Accent color for System Requirements (SR)", "widget":"color"}'
+    - '// @input vec4 dirColor = "{0.6, 0.35, 0.9, 1.0}" {"hint":"Accent color for Design Input Requirements (DIR)", "widget":"color"}'
+    - '// @input vec4 swrColor = "{0.25, 0.8, 0.45, 1.0}" {"hint":"Accent color for Software Requirements (SWR)", "widget":"color"}'
+    - '// @input vec4 selectedNodeColor = "{1.0, 1.0, 1.0, 1.0}" {"hint":"Highlight color applied to the selected node", "widget":"color"}'
+    - "// @input vec4 neighborNodeColor = \"{0.5, 0.9, 1.0, 1.0}\" {\"hint\":\"Highlight color applied to the selected node's directly-connected neighbor nodes\", \"widget\":\"color\"}"
+    - '// @input vec4 highlightEdgeColor = "{1.0, 1.0, 1.0, 1.0}" {"hint":"Color applied to edges directly connecting the selected node to its neighbors", "widget":"color"}'
+    - "// @input float selectedScaleMultiplier = 1.4 {\"hint\":\"Uniform scale multiplier applied to the selected node's sphere while highlighted\", \"widget\":\"slider\", \"min\":1, \"max\":2.5, \"step\":0.05}"
+    - '// @input float highlightEdgeThicknessMultiplier = 2.2 {"hint":"Thickness multiplier applied to edges directly connecting the selected node to its neighbors", "widget":"slider", "min":1, "max":4, "step":0.1}'
+    - '// @input float dimAmount = 0.75 {"hint":"How strongly non-highlighted nodes/edges are dimmed toward neutral gray while a selection is active (0 = no dim, 1 = fully gray)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input vec4 labelColor = "{1.0, 1.0, 1.0, 0.92}" {"hint":"Color of the persistent node name label shown at all times above each node", "widget":"color"}'
+    - "// @input float labelHeightCm = 0.9 {\"hint\":\"World-space text height (cm) of the persistent node name label — kept small relative to nodeSizeCm so ~33 nodes don't clutter the view\", \"widget\":\"slider\", \"min\":0.3, \"max\":3, \"step\":0.05}"
+    - "// @input float labelGapCm = 0.6 {\"hint\":\"Gap (cm) between a node sphere's surface and the bottom of its name label\", \"widget\":\"slider\", \"min\":0, \"max\":3, \"step\":0.1}"
+    - "// @input bool debugColliders {\"hint\":\"Wireframe-render every node's collider — diagnostic toggle\"}"
+    - '// @ui {"widget":"group_end"}'

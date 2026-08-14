@@ -1,0 +1,388 @@
+[
+  {
+    "id": "9ff20aeb-b87b-454b-a2a3-dde9162f9fa9",
+    "name": "DIR-01",
+    "title": "Select 4K CMOS sensors",
+    "description": "The hardware engineering team shall select 4k cmos sensors to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "80190e92-f12f-45ef-8693-4ce28d08de70",
+    "name": "DIR-02",
+    "title": "Specify 10N torque motors",
+    "description": "The hardware engineering team shall specify 10n torque motors to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "962a1aef-33f1-44db-a43a-5c1b154ae0f9",
+    "name": "DIR-03",
+    "title": "Design ergonomic hand controllers",
+    "description": "The hardware engineering team shall design ergonomic hand controllers to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "768aacf8-de7f-499c-9869-4757f0968610",
+    "name": "DIR-04",
+    "title": "Select AES encryption coprocessor",
+    "description": "The hardware engineering team shall select aes encryption coprocessor to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "97b3292e-79de-4f4c-a862-b24e13840acc",
+    "name": "DIR-05",
+    "title": "Specify 134°C autoclavable plastics",
+    "description": "The hardware engineering team shall specify 134°c autoclavable plastics to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "4f38abac-db86-43a4-93f7-5bc4bdb129d8",
+    "name": "DIR-06",
+    "title": "Design physical E-Stop button",
+    "description": "The hardware engineering team shall design physical e-stop button to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "3b6e607f-d26f-43d7-856a-1b4f88a6cc58",
+    "name": "DIR-07",
+    "title": "Select VoIP microphones",
+    "description": "The hardware engineering team shall select voip microphones to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "9701b277-3932-4a10-9d1d-864c60216d81",
+    "name": "DIR-08",
+    "title": "Specify HL7 network port",
+    "description": "The hardware engineering team shall specify hl7 network port to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "6bd218bc-8d53-484f-83b7-78157191c297",
+    "name": "DIR-09",
+    "title": "Design dual-console link cable",
+    "description": "The hardware engineering team shall design dual-console link cable to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "81556893-dc58-4d98-81ca-fef6694dafb3",
+    "name": "DIR-10",
+    "title": "Select H.265 hardware encoder",
+    "description": "The hardware engineering team shall select h.265 hardware encoder to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "1c7c27e7-b1c6-4ce1-beab-e38d0ebd1982",
+    "name": "DIR-11",
+    "title": "Specify clutch foot pedal",
+    "description": "The hardware engineering team shall specify clutch foot pedal to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "9af03d81-3491-451d-940f-b3e1e603c1f0",
+    "name": "DIR-12",
+    "title": "Design 30-min Li-Ion UPS",
+    "description": "The hardware engineering team shall design 30-min li-ion ups to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "5e9f65d2-78ad-4413-8d97-b7cafcdea548",
+    "name": "DIR-13",
+    "title": "Select magnetic couplings",
+    "description": "The hardware engineering team shall select magnetic couplings to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "dddca07c-9c26-4fd1-89b5-b2acfe72ec87",
+    "name": "DIR-14",
+    "title": "Specify robotic arm carbon fiber",
+    "description": "The hardware engineering team shall specify robotic arm carbon fiber to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "06f4077c-f645-4e82-8e4e-6c9df446e6bc",
+    "name": "DIR-15",
+    "title": "Design alarm speaker system",
+    "description": "The hardware engineering team shall design alarm speaker system to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "df576a9a-066a-460e-9975-d94072ae800e",
+    "name": "DIR-16",
+    "title": "Select absolute rotary encoders",
+    "description": "The hardware engineering team shall select absolute rotary encoders to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "bdb11400-3eda-485d-8de2-b9f1eb53698a",
+    "name": "DIR-17",
+    "title": "Specify motorized casters",
+    "description": "The hardware engineering team shall specify motorized casters to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "73334104-b43d-430b-bb2b-cbb90784abde",
+    "name": "DIR-18",
+    "title": "Design POST logic board",
+    "description": "The hardware engineering team shall design post logic board to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "a0a5d182-1e59-431e-bbf3-0e2e6e8b4114",
+    "name": "DIR-19",
+    "title": "Select VR headset displays",
+    "description": "The hardware engineering team shall select vr headset displays to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "d9ed46f9-b7f3-41a4-b43c-d5adc4f961fb",
+    "name": "DIR-20",
+    "title": "Specify encrypted SSDs",
+    "description": "The hardware engineering team shall specify encrypted ssds to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "bf4f0f08-b1d9-4add-b818-b289cefe0356",
+    "name": "DIR-21",
+    "title": "Design quad-pedal assembly",
+    "description": "The hardware engineering team shall design quad-pedal assembly to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "99989c52-4498-41d4-bdf7-730b8c724116",
+    "name": "DIR-22",
+    "title": "Select redundant gigabit switches",
+    "description": "The hardware engineering team shall select redundant gigabit switches to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "7cad522b-376c-41dc-aef1-f241b9ef3f82",
+    "name": "DIR-23",
+    "title": "Specify 1000Hz sampling ADCs",
+    "description": "The hardware engineering team shall specify 1000hz sampling adcs to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "c53e8e52-7127-4a86-87e2-2061b99e0865",
+    "name": "DIR-24",
+    "title": "Design motion scaling toggle",
+    "description": "The hardware engineering team shall design motion scaling toggle to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "7c53602e-fd83-4c19-b9a1-b7e14f57f3e2",
+    "name": "DIR-25",
+    "title": "Select fiber optic illuminator",
+    "description": "The hardware engineering team shall select fiber optic illuminator to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "9acb4859-bef6-4081-8344-fa6fbe2d9218",
+    "name": "DIR-26",
+    "title": "Specify active cooling fans",
+    "description": "The hardware engineering team shall specify active cooling fans to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "6a540437-bff9-44c8-a1bb-04d59c889eb3",
+    "name": "DIR-27",
+    "title": "Design instrument EEPROMs",
+    "description": "The hardware engineering team shall design instrument eeproms to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "6a6e9529-5ec8-4e0d-908c-58fc3953d2d1",
+    "name": "DIR-28",
+    "title": "Select low-latency network cards",
+    "description": "The hardware engineering team shall select low-latency network cards to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "20f96f48-e648-487a-8189-f493719fdfd4",
+    "name": "DIR-29",
+    "title": "Specify eye-tracking IR cameras",
+    "description": "The hardware engineering team shall specify eye-tracking ir cameras to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "6daa2690-87ff-4b42-bf58-6342163d7fdf",
+    "name": "DIR-30",
+    "title": "Design suture cutting shears",
+    "description": "The hardware engineering team shall design suture cutting shears to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "663c9b69-216b-45c5-9ea5-12e8107bc2f1",
+    "name": "DIR-31",
+    "title": "Select FPGA for kinematics",
+    "description": "The hardware engineering team shall select fpga for kinematics to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "a8e33cb3-6df5-4254-8f6d-3e2aaeed54e9",
+    "name": "DIR-32",
+    "title": "Specify sterile draping clips",
+    "description": "The hardware engineering team shall specify sterile draping clips to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "f4f9e096-bad3-4f45-831d-e64e6fb826bd",
+    "name": "DIR-33",
+    "title": "Design surgeon chair padding",
+    "description": "The hardware engineering team shall design surgeon chair padding to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "747ff829-7814-458a-8c11-a4532deec64c",
+    "name": "DIR-34",
+    "title": "Select high-brightness LEDs",
+    "description": "The hardware engineering team shall select high-brightness leds to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "3931cfb1-555e-4de8-bc62-d674d15e051b",
+    "name": "DIR-35",
+    "title": "Specify titanium surgical tips",
+    "description": "The hardware engineering team shall specify titanium surgical tips to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "d11ac86a-c09d-4d30-9a7b-cc4bf10fbd90",
+    "name": "DIR-36",
+    "title": "Design transport handle grips",
+    "description": "The hardware engineering team shall design transport handle grips to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "bdd29779-0483-4201-8435-851d7cdddaf8",
+    "name": "DIR-37",
+    "title": "Select backup power relays",
+    "description": "The hardware engineering team shall select backup power relays to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "06736ee9-ee0c-4531-bcda-bae19fa728da",
+    "name": "DIR-38",
+    "title": "Specify medical grade power supply",
+    "description": "The hardware engineering team shall specify medical grade power supply to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "aae8dbcd-28be-49e5-91a1-97de8e6b7801",
+    "name": "DIR-39",
+    "title": "Design articulating wrist joint",
+    "description": "The hardware engineering team shall design articulating wrist joint to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "e4a496c2-c923-4006-873a-0f98e7131707",
+    "name": "DIR-40",
+    "title": "Select low-friction bearings",
+    "description": "The hardware engineering team shall select low-friction bearings to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "b59060dd-5eb8-40ab-aae2-9fb581a8c1b2",
+    "name": "DIR-41",
+    "title": "Specify EMI shielding",
+    "description": "The hardware engineering team shall specify emi shielding to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "ea233866-df8b-41ed-b4a9-6389a6d10ff7",
+    "name": "DIR-42",
+    "title": "Design touchscreen display panel",
+    "description": "The hardware engineering team shall design touchscreen display panel to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "3fc2e727-8b45-456f-9e37-83a760aa3386",
+    "name": "DIR-43",
+    "title": "Select RFID antenna",
+    "description": "The hardware engineering team shall select rfid antenna to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "84d1d154-1431-4003-8ac6-cd9bebcbb262",
+    "name": "DIR-44",
+    "title": "Specify heartbeat watchdog timer",
+    "description": "The hardware engineering team shall specify heartbeat watchdog timer to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": [
+      "588387f6-8bbf-40c0-adc6-03d896cc90e9"
+    ]
+  },
+  {
+    "id": "330016f5-5583-4191-9382-cd48a6827dd6",
+    "name": "DIR-45",
+    "title": "Design hardware interrupt routing",
+    "description": "The hardware engineering team shall design hardware interrupt routing to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "89d7e0e2-06b4-47af-92d4-e68ec8786cc9",
+    "name": "DIR-46",
+    "title": "Select telemetry WiFi module",
+    "description": "The hardware engineering team shall select telemetry wifi module to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "43e69fc4-907c-480a-86e2-caf71a7bb738",
+    "name": "DIR-47",
+    "title": "Specify path planning CPU",
+    "description": "The hardware engineering team shall specify path planning cpu to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  },
+  {
+    "id": "925ec8f2-67e6-49c9-8f00-aa9ce7c533c5",
+    "name": "DIR-48",
+    "title": "Design inverse kinematics DSP",
+    "description": "The hardware engineering team shall design inverse kinematics dsp to meet the physical system constraints.",
+    "type": "DIR",
+    "traceLinks": []
+  }
+]

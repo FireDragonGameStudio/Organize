@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/d0e15e48-9bc3-43d8-bab9-7cd1a3db552a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3a6f5c14-00b3-4f4a-856d-64835ccd360d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3a6f5c14-00b3-4f4a-856d-64835ccd360d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f24d9df9-55ce-4bd0-87b8-598cc8aecd22
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f24d9df9-55ce-4bd0-87b8-598cc8aecd22>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 70c0d726-d440-4e82-887c-68325d99d996
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    detailPanel: false
+    internetModule: false
+    legendPanel: false
+    renderer: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - legendPanel: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      detailPanel: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      renderer: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      internetModule: !<reference.InternetModule> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TraceGraphMain – Orchestrator (state, wiring, SFX)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 legendPanel {"hint":"Legend HUD panel (TraceGraphLegendUI) — displays the title + per-class counts"}'
+    - '// @input AssignableType_2 detailPanel {"hint":"Detail panel (TraceGraphDetailUI) — shows the selected requirement and its type-change control"}'
+    - '// @input AssignableType_3 renderer {"hint":"Renderer (TraceGraphRenderer) that owns the procedural graph nodes and edges"}'
+    - '// @input Asset.InternetModule internetModule {"hint":"InternetModule asset — used to fetch requirements from the local maXR backend (http://localhost:3000). Falls back to demo data if unassigned or unreachable."}'
+    - '// @ui {"widget":"group_end"}'
