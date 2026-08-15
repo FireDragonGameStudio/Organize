@@ -212,15 +212,15 @@ export class TraceabilityMatrixComponent implements OnInit {
 
     // Build the main tree starting from URs
     this.tree = urs.map(ur => {
-      // Find linked SRs
-      const linkedSRs = srs.filter(sr => (sr.traceLinks || []).includes(ur.id));
+      // Find linked SRs (SRs whose IDs are in the UR's traceLinks)
+      const linkedSRs = srs.filter(sr => (ur.traceLinks || []).includes(sr.id));
       
       const srNodes = linkedSRs.map(sr => {
         usedSRs.add(sr.id);
         
-        // Find linked DIRs and SWRs
-        const linkedDIRs = dirs.filter(dir => (dir.traceLinks || []).includes(sr.id));
-        const linkedSWRs = swrs.filter(swr => (swr.traceLinks || []).includes(sr.id));
+        // Find linked DIRs and SWRs (DIRs/SWRs whose IDs are in the SR's traceLinks)
+        const linkedDIRs = dirs.filter(dir => (sr.traceLinks || []).includes(dir.id));
+        const linkedSWRs = swrs.filter(swr => (sr.traceLinks || []).includes(swr.id));
         
         const childNodes = [
           ...linkedDIRs.map(dir => {
@@ -242,9 +242,9 @@ export class TraceabilityMatrixComponent implements OnInit {
     // Build orphans
     this.orphans = [];
     srs.filter(sr => !usedSRs.has(sr.id)).forEach(sr => {
-      // Find children of this orphaned SR just in case
-      const linkedDIRs = dirs.filter(dir => (dir.traceLinks || []).includes(sr.id));
-      const linkedSWRs = swrs.filter(swr => (swr.traceLinks || []).includes(sr.id));
+      // Find children of this orphaned SR
+      const linkedDIRs = dirs.filter(dir => (sr.traceLinks || []).includes(dir.id));
+      const linkedSWRs = swrs.filter(swr => (sr.traceLinks || []).includes(swr.id));
       
       const childNodes = [
         ...linkedDIRs.map(dir => {

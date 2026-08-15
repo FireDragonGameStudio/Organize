@@ -347,8 +347,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
         this.fileType = newFileType;
         
         this.loadColumnWidths();
-        this.loadTargets();
-        this.loadRequirements();
+        this.loadData();
         
         if (projectChanged) {
           this.wsService.disconnect();
@@ -358,8 +357,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
     });
 
     this.wsService.getMessages().subscribe(msg => {
-      this.loadRequirements();
-      this.loadTargets();
+      this.loadData();
     });
 
     this.route.fragment.subscribe(frag => {
@@ -388,7 +386,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
     return [];
   }
 
-  loadTargets() {
+  loadData() {
     let tracesToTypes: string[] = [];
     let tracedByTypes: string[] = [];
 
@@ -401,47 +399,50 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
       tracedByTypes = ['system'];
     }
 
-    const allTypes = Array.from(new Set([...tracesToTypes, ...tracedByTypes]));
+    const allTargetTypes = Array.from(new Set([...tracesToTypes, ...tracedByTypes]));
 
-    if (allTypes.length > 0) {
-      forkJoin(allTypes.map(f => this.projectService.getFiles(this.projectId, f))).subscribe(results => {
-        const allFetched = results.flat();
-        this.availableTargets = allFetched;
-        
-        const tracesToPrefixes = this.getTracesToPrefixes();
-        const tracedByPrefixes = this.getTracedByPrefixes();
+    const reqsObj: any = { main: this.projectService.getFiles(this.projectId, this.fileType) };
+    allTargetTypes.forEach(t => { reqsObj[t] = this.projectService.getFiles(this.projectId, t); });
 
-        this.availableTracesTo = allFetched.filter(t => tracesToPrefixes.some(p => (t.name || '').startsWith(p)));
-        this.availableTracedBy = allFetched.filter(t => tracedByPrefixes.some(p => (t.name || '').startsWith(p)));
+    forkJoin(reqsObj).subscribe((results: any) => {
+      const mainReqs = results.main;
+      
+      let allFetched: any[] = [];
+      allTargetTypes.forEach(t => {
+        allFetched = allFetched.concat(results[t]);
       });
-    } else {
-      this.availableTargets = [];
-      this.availableTracesTo = [];
-      this.availableTracedBy = [];
-    }
-  }
-
-  loadRequirements() {
-    this.projectService.getFiles(this.projectId, this.fileType).subscribe(data => {
+      this.availableTargets = allFetched;
+      
       const tracesToPrefixes = this.getTracesToPrefixes();
       const tracedByPrefixes = this.getTracedByPrefixes();
       
-      this.requirements = data.map(req => {
-        const traceLinks = req.traceLinks || [];
+      this.availableTracesTo = allFetched.filter(t => tracesToPrefixes.some(p => (t.name || '').startsWith(p)));
+      this.availableTracedBy = allFetched.filter(t => tracedByPrefixes.some(p => (t.name || '').startsWith(p)));
+
+      this.requirements = mainReqs.map((req: any) => {
+        const tracesTo = (req.traceLinks || []).filter((linkId: string) => {
+          const target = this.availableTargets.find(t => t.id === linkId);
+          return target && tracesToPrefixes.some(p => (target.name || '').startsWith(p));
+        });
+
+        const tracedBy = this.availableTargets.filter(t => {
+          const isExpectedType = tracedByPrefixes.some(p => (t.name || '').startsWith(p));
+          if (!isExpectedType) return false;
+          
+          const parentHasUs = (t.traceLinks || []).includes(req.id);
+          const weHaveParent = (req.traceLinks || []).includes(t.id);
+          return parentHasUs || weHaveParent;
+        }).map(t => t.id);
+
         return { 
           ...req, 
           isEditing: false,
-          traceLinks: traceLinks,
-          tracesTo: traceLinks.filter((linkId: string) => {
-            const target = this.availableTargets.find(t => t.id === linkId);
-            return target && tracesToPrefixes.some(p => (target.name || '').startsWith(p));
-          }),
-          tracedBy: traceLinks.filter((linkId: string) => {
-            const target = this.availableTargets.find(t => t.id === linkId);
-            return target && tracedByPrefixes.some(p => (target.name || '').startsWith(p));
-          })
+          traceLinks: [...new Set([...tracesTo, ...tracedBy])],
+          tracesTo: tracesTo,
+          tracedBy: tracedBy
         };
       });
+
       this.selection.clear();
       this.isBulkEditing = false;
       this.cdr.detectChanges();
@@ -502,7 +503,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
   addRequirement() {
     const newReq = { title: 'New Requirement', description: 'Description here...' };
     this.projectService.addRequirement(this.projectId, this.fileType, newReq).subscribe(() => {
-      this.loadRequirements();
+      this.loadData();
     });
   }
 
@@ -517,7 +518,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
     const { isEditing, tracesTo: tt, tracedBy: tb, ...dataToSave } = req;
     
     this.projectService.updateRequirement(this.projectId, this.fileType, req.id, dataToSave).subscribe(() => {
-      this.loadRequirements();
+      this.loadData();
       this.snackBar.open(`Requirement ${req.id} updated successfully`, 'Close', { duration: 3000 });
     });
   }
@@ -539,7 +540,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
       if (result) {
         this.projectService.deleteRequirement(this.projectId, this.fileType, req.id).subscribe({
           next: () => {
-            this.loadRequirements();
+            this.loadData();
             this.snackBar.open(`Requirement ${req.id} deleted successfully`, 'Close', { duration: 3000 });
           },
           error: (err) => console.error('Error deleting requirement:', err)
@@ -568,7 +569,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
     const ids = updates.map(u => u.id).join(', ');
 
     this.projectService.bulkUpdateRequirements(this.projectId, this.fileType, updates).subscribe(() => {
-      this.loadRequirements();
+      this.loadData();
       this.isBulkEditing = false;
       this.snackBar.open(`Bulk update successful for: ${ids}`, 'Close', { duration: 5000 });
     });
@@ -598,7 +599,7 @@ export class RequirementEditorComponent implements OnInit, OnDestroy {
               completed++;
               if (completed === ids.length) {
                 this.selection.clear();
-                this.loadRequirements();
+                this.loadData();
                 this.snackBar.open(`Bulk delete successful`, 'Close', { duration: 5000 });
               }
             },
